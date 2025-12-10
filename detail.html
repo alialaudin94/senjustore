@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 Detail Harga & Formula | Joki DinSlayer Elite Fire 🔥</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Gaya Dasar */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #e6e6e6; 
+            color: #333; 
+        }
+        
+        /* Header dan Navigasi (Menggunakan Tema Api/Gelap) */
+        .header { 
+            /* ----- GAYA TEMA API / GELAP ----- */
+            background-color: #0d0d0d;
+            background-image: radial-gradient(circle at 50% 10%, #ff6600 0%, #331a00 30%, #0d0d0d 80%); 
+            background-size: cover;
+            background-position: center; 
+            
+            color: white; 
+            padding: 40px 0; 
+            text-align: center; 
+            box-shadow: 0 5px 15px rgba(255, 69, 0, 0.7); /* Shadow oranye */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.0); 
+        }
+        .header h1 { 
+            margin: 0; 
+            font-size: 3em; 
+            text-shadow: 0 0 10px #ff9900, 0 0 20px #ff6600; /* Text glow */
+        }
+        .header p {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .nav { 
+            background-color: #1a1a1a; 
+            overflow: hidden; 
+            text-align: center; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+        }
+        .nav a { 
+            display: inline-block; 
+            color: #fff; 
+            text-align: center; 
+            padding: 15px 25px; 
+            text-decoration: none; 
+            text-transform: uppercase; 
+            font-weight: bold; 
+            transition: background-color 0.3s; 
+        }
+        .nav a:hover { 
+            background-color: #ff4500; 
+            color: #fff; 
+        }
+        
+        /* Konten Utama */
+        .container { 
+            padding: 30px; 
+            max-width: 1000px; 
+            margin: 20px auto; 
+            background-color: white; 
+            border-radius: 10px; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); 
+        }
+        .section-title { 
+            color: #ff4500; 
+            border-bottom: 3px solid #ff4500; 
+            padding-bottom: 8px; 
+            margin-bottom: 25px; 
+            font-size: 1.8em; 
+        }
+        
+        /* Bagian Detail/Formula */
+        .detail-group { 
+            margin-bottom: 30px; 
+            padding: 20px; /* Padding lebih besar */
+            border-left: 5px solid #007bff; 
+            background-color: #fffaf0; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .detail-group h3 { 
+            color: #007bff; 
+            font-size: 1.5em;
+            margin-top: 0;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 10px;
+        }
+        
+        /* Rincian Harga Satuan */
+        .price-list { 
+            list-style: none; /* Hilangkan bullet default */
+            padding: 0;
+        }
+        .price-list li { 
+            margin-bottom: 10px; 
+            font-weight: bold; 
+            background-color: #fcfcfc;
+            padding: 8px;
+            border-radius: 4px;
+            border-left: 3px solid #ff9800; /* Garis samping oranye */
+        }
+        .price-list li strong {
+            color: #28a745; /* Harga berwarna hijau */
+        }
+
+        /* Rincian Paket Penuh */
+        .paket-list { 
+            list-style: none; 
+            padding: 0;
+        }
+        .paket-list li { 
+            margin-bottom: 10px; 
+            padding: 12px; 
+            background-color: #e3f2fd; 
+            border-left: 5px solid #007bff; /* Garis samping biru */
+            font-weight: bold;
+            font-size: 1.1em;
+            border-radius: 4px;
+        }
+        .paket-list li strong {
+            color: #dc3545; /* Harga paket penuh berwarna merah */
+        }
+
+        /* Informasi Tambahan/Khusus */
+        .info-tambahan { 
+            margin-top: 40px; 
+            padding: 20px; 
+            background-color: #f0f0f0; 
+            border-radius: 8px; 
+            border: 1px solid #ccc;
+        }
+        .info-tambahan h3 {
+            color: #333; 
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+        .info-tambahan ol {
+            padding-left: 20px;
+        }
+        .info-tambahan li {
+            margin-bottom: 10px;
+        }
+
+        /* Gaya untuk footer agar tidak ada background image */
+        .footer-header {
+            margin-top: 20px; 
+            font-size: 0.8em; 
+            padding: 10px; 
+            background-color: #333; 
+            background-image: none; 
+            text-shadow: none;
+            box-shadow: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>💰 DETAIL HARGA DAN FORMULA JOKI</h1>
+        <p>Cek semua rincian harga per match, per bintang, dan paket penuh GM.</p>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">🏠 Beranda</a>
+        <a href="produk.html">🛒 Layanan Joki</a>
+        <a href="detail.html">💰 Detail Harga & Formula</a>
+    </div>
+    
+    <div class="container">
+
+        <section id="detail">
+            <h2 class="section-title"><i class="fas fa-hand-holding-usd"></i> Rincian Joki Satuan</h2>
+
+            <div id="detail-br" class="detail-group" style="border-left: 5px solid #ff4500; background-color: #fff8f8;">
+                <h3 style="color: #ff4500;"><i class="fas fa-fire"></i> Joki BR (Battle Royale) Per Match</h3>
+                <ul class="price-list">
+                    <li>Bronze - Silver: <strong>FREE</strong> / per match</li>
+                    <li>Silver - Gold: <strong>Rp 1.000</strong> / per match</li>
+                    <li>Gold - Platinum: <strong>Rp 1.500</strong> / per match</li>
+                    <li>Platinum - Diamond: <strong>Rp 2.000</strong> / per match</li>
+                    <li>Diamond - Master: <strong>Mulai Rp 3.000</strong> / per match</li>
+                </ul>
+                <p style="font-style: italic; color: #888;">*Match gratis hanya berlaku untuk 5 match pertama di rank Bronze-Silver.</p>
+            </div>
+            
+            <div id="detail-csr" class="detail-group" style="border-left: 5px solid #007bff; background-color: #f8faff;">
+                <h3 style="color: #007bff;"><i class="fas fa-star"></i> Joki CS-R (Clash Squad Ranked) Per Bintang</h3>
+                <ul class="price-list">
+                    <li>Bronze - Silver: <strong>FREE</strong> / per bintang</li>
+                    <li>Silver - Gold: <strong>Rp 1.000</strong> / per bintang</li>
+                    <li>Gold - Platinum: <strong>Rp 1.500</strong> / per bintang</li>
+                    <li>Platinum - Diamond: <strong>Rp 2.000</strong> / per bintang</li>
+                    <li>Diamond - Master: <strong>Mulai Rp 3.000</strong> / per bintang</li>
+                </ul>
+                <p style="font-style: italic; color: #888;">*Bintang gratis hanya berlaku untuk 5 bintang pertama di rank Bronze-Silver.</p>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 40px;"><i class="fas fa-crown"></i> Paket Joki Penuh (Ke Grandmaster)</h2>
+
+            <div id="paket-csr" class="detail-group" style="border-left: 5px solid #007bff; background-color: #f0f8ff;">
+                <h3><i class="fas fa-rocket"></i> Paket Joki CS-R (Clash Squad Ranked) ke Grandmaster</h3>
+                <ul class="paket-list">
+                    <li>Platinum - Heroic: <strong>Rp 35.000</strong></li>
+                    <li>Diamond - Heroic: <strong>Rp 30.000</strong></li>
+                    <li>Heroic - Master Kuning: <strong>Rp 50.000</strong></li>
+                    <li>Master Kuning - Grandmaster: <strong>Rp 55.000</strong></li>
+                </ul>
+            </div>
+
+            <div id="paket-br" class="detail-group" style="border-left: 5px solid #ff4500; background-color: #fff0f0;">
+                <h3 style="color: #ff4500;"><i class="fas fa-trophy"></i> Paket Joki BR (Battle Royale) ke Grandmaster</h3>
+                <ul class="paket-list">
+                    <li>Platinum - Heroic: <strong>Rp 35.000</strong></li>
+                    <li>Diamond - Heroic: <strong>Rp 25.000</strong></li>
+                    <li>Heroic - Master Kuning: <strong>Rp 50.000</strong></li>
+                    <li>Master Kuning - Grandmaster: <strong>Rp 55.000</strong></li>
+                </ul>
+            </div>
+            
+            <div id="list-khusus" class="info-tambahan">
+                <h3 class="section-title" style="color: #333; border-bottom: 2px solid #333;"><i class="fas fa-question-circle"></i> Bagaimana Jika Rank Saya Tidak Ada di Daftar?</h3>
+                <p>Jika Anda ingin order dari rank lain (misalnya Silver ke Grandmaster, atau Gold ke Master), silakan ikuti langkah berikut:</p>
+                <ol>
+                    <li>Hubungi Admin via **WhatsApp (<a href="https://wa.me/6285704681654" style="color: #25D366; text-decoration: none;">+62 857-0468-1654</a>)**.</li>
+                    <li>Sebutkan Rank Awal dan Rank Tujuan Anda (contoh: BR, Silver I ke Grandmaster).</li>
+                    <li>Kami akan membuatkan **Paket Harga Custom** yang dihitung berdasarkan gabungan harga per match/per bintang dari rank awal hingga tujuan Anda.</li>
+                    <li>Pembayaran dapat dilakukan setelah kesepakatan harga custom.</li>
+                </ol>
+            </div>
+
+        </section>
+        
+    </div>
+
+    <div class="header footer-header">
+        &copy; 2025 Joki DinSlayer Elite Fire.
+    </div>
+
+</body>
+</html>

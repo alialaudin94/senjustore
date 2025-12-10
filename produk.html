@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛒 Layanan Joki | Joki DinSlayer Elite Fire 🔥</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Gaya Dasar */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #e6e6e6; 
+            color: #333; 
+        }
+        
+        /* Header dan Navigasi */
+        .header { 
+            /* ----- GAYA TEMA API / GELAP ----- */
+            background-color: #0d0d0d;
+            background-image: radial-gradient(circle at 50% 10%, #ff6600 0%, #331a00 30%, #0d0d0d 80%); 
+            background-size: cover;
+            background-position: center; 
+            
+            color: white; 
+            padding: 40px 0; 
+            text-align: center; 
+            box-shadow: 0 5px 15px rgba(255, 69, 0, 0.7); /* Shadow oranye */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.0); 
+        }
+        .header h1 { 
+            margin: 0; 
+            font-size: 3em; 
+            text-shadow: 0 0 10px #ff9900, 0 0 20px #ff6600; /* Text glow */
+        }
+        .header p {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .nav { 
+            background-color: #1a1a1a; 
+            overflow: hidden; 
+            text-align: center; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+        }
+        .nav a { 
+            display: inline-block; 
+            color: #fff; 
+            text-align: center; 
+            padding: 15px 25px; 
+            text-decoration: none; 
+            text-transform: uppercase; 
+            font-weight: bold; 
+            transition: background-color 0.3s; 
+        }
+        .nav a:hover { 
+            background-color: #ff4500; 
+            color: #fff; 
+        }
+        
+        /* Konten Utama */
+        .container { 
+            padding: 30px; 
+            max-width: 1000px; 
+            margin: 20px auto; 
+            background-color: white; 
+            border-radius: 10px; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); 
+        }
+        .section-title { 
+            color: #ff4500; 
+            border-bottom: 3px solid #ff4500; 
+            padding-bottom: 8px; 
+            margin-bottom: 25px; 
+            font-size: 1.8em; 
+        }
+        
+        /* Bagian Produk */
+        .product-grid { 
+            display: flex; 
+            gap: 20px; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            margin-bottom: 30px; 
+        }
+        .product-card { 
+            flex: 1 1 calc(50% - 30px); /* Dibuat 2 kolom di desktop */
+            min-width: 280px; 
+            background-color: #f9f9f9; 
+            border: 2px solid #ddd; 
+            padding: 20px; 
+            border-radius: 8px; 
+            text-align: center; 
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; /* Transisi untuk border juga */
+        }
+        .product-card h3 { 
+            color: #007bff; 
+            margin-top: 0; 
+            font-size: 1.5em;
+        }
+        
+        /* Gaya Hover Efek Api */
+        .product-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 15px rgba(255, 69, 0, 0.4); /* Glow oranye saat hover */
+            border-color: #ff4500; /* Border berubah menjadi warna api */
+        }
+        
+        /* Gaya Kartu Paket Penuh */
+        .product-card.full-package { 
+            border: 3px solid #007bff; 
+            background-color: #e6f0ff; 
+        }
+        /* Hover untuk Paket Penuh */
+        .product-card.full-package:hover {
+            box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4); /* Glow biru saat hover */
+            border-color: #007bff;
+        }
+
+        .price { 
+            font-size: 1.8em; /* Ukuran lebih besar */
+            font-weight: bold; 
+            color: #28a745; /* Warna hijau untuk harga */
+            margin: 15px 0; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .sub-title { 
+            color: #ff4500; 
+            margin-top: 40px; /* Jarak lebih jauh dari bagian atas */
+        }
+        
+        /* Gaya untuk footer */
+        .footer-header {
+            margin-top: 20px; 
+            font-size: 0.8em; 
+            padding: 10px; 
+            background-color: #333; 
+            background-image: none; 
+            text-shadow: none;
+            box-shadow: none;
+        }
+
+        /* Responsif untuk Layar Kecil */
+        @media (max-width: 600px) {
+            .product-card {
+                flex: 1 1 100%; /* Satu kolom penuh di HP */
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🛒 LAYANAN JOKI KAMI</h1>
+        <p>Pilih paket satuan per match/per bintang, atau paket penuh Grandmaster!</p>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">🏠 Beranda</a>
+        <a href="produk.html">🛒 Layanan Joki</a>
+        <a href="detail.html">💰 Detail Harga & Formula</a>
+    </div>
+    
+    <div class="container">
+
+        <section id="produk">
+            <h2 class="section-title">💰 Joki Satuan (Per Match/Per Bintang)</h2>
+
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <h3><i class="fas fa-trophy" style="color: gold;"></i> Joki BR (Battle Royale)</h3>
+                    <p>Bayar per match! Jaminan minimal **Top 15**.</p>
+                    <div class="price">Mulai Rp 1.000 / Match</div>
+                    <p>Harga menyesuaikan rank Anda saat ini.</p>
+                    <a href="detail.html#detail-br" style="color: #ff4500; font-weight: bold;">Lihat Rincian Harga per Match &raquo;</a>
+                </div>
+
+                <div class="product-card">
+                    <h3><i class="fas fa-medal" style="color: silver;"></i> Joki CS-R (Clash Squad Ranked)</h3>
+                    <p>Bayar per bintang! Jaminan **Win Rate tinggi**.</p>
+                    <div class="price">Mulai Rp 1.000 / Bintang</div>
+                    <p>Harga menyesuaikan rank Anda saat ini.</p>
+                    <a href="detail.html#detail-csr" style="color: #ff4500; font-weight: bold;">Lihat Rincian Harga per Bintang &raquo;</a>
+                </div>
+            </div>
+
+            <h2 class="section-title sub-title">🚀 Paket Joki Penuh (Bronze ke Grandmaster)</h2>
+
+            <div class="product-grid">
+                
+                <div class="product-card full-package">
+                    <h3 style="color: #007bff;"><i class="fas fa-crown"></i> Joki Penuh CS-R ke GM</h3>
+                    <p>Ambil Paket Langsung dari Rank Tertentu ke **Grandmaster**.</p>
+                    <div class="price">Mulai Rp 30.000</div>
+                    <p>Khusus mode Clash Squad Ranked.</p>
+                    <a href="detail.html#paket-csr" style="color: #007bff; font-weight: bold;">Lihat Rincian Paket Penuh &raquo;</a>
+                </div>
+
+                <div class="product-card full-package">
+                    <h3 style="color: #007bff;"><i class="fas fa-crown"></i> Joki Penuh BR ke GM</h3>
+                    <p>Ambil Paket Langsung dari Rank Tertentu ke **Grandmaster**.</p>
+                    <div class="price">Mulai Rp 25.000</div>
+                    <p>Khusus mode Battle Royale.</p>
+                    <a href="detail.html#paket-br" style="color: #007bff; font-weight: bold;">Lihat Rincian Paket Penuh &raquo;</a>
+                </div>
+            </div>
+            
+        </section>
+        
+    </div>
+
+    <div class="header footer-header">
+        &copy; 2025 Joki DinSlayer Elite Fire.
+    </div>
+
+</body>
+</html>
